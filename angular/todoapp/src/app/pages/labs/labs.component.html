@@ -60,4 +60,7 @@
       <p *ngSwitchDefault>Yo no soy nadie</p>
     </div>
   </div>
+  <hr />
+  <input type="color" [formControl]="colorCtrl">
+  <p>Color: {{ colorCtrl.value }}</p>
 </div>
