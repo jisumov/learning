@@ -38,7 +38,7 @@ public class Compra {
     private Cliente cliente;
 
     @OneToMany(mappedBy = "compra")
-    private List<Producto> productos;
+    private List<ComprasProducto> productos;
 
     public Integer getIdCompra() {
         return idCompra;
@@ -96,11 +96,11 @@ public class Compra {
         this.cliente = cliente;
     }
 
-    public List<Producto> getProductos() {
+    public List<ComprasProducto> getProductos() {
         return productos;
     }
 
-    public void setProductos(List<Producto> productos) {
+    public void setProductos(List<ComprasProducto> productos) {
         this.productos = productos;
     }
 }
